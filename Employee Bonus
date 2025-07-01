@@ -1,0 +1,6 @@
+-- LeetCode 577. Employee Bonus
+-- https://leetcode.com/problems/employee-bonus/
+
+SELECT name, bonus.bonus from employee
+LEFT JOIN bonus ON bonus.empid = employee.empid
+WHERE bonus.bonus < 1000 OR bonus.bonus IS NULL

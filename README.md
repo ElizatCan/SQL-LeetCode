@@ -1,12 +1,7 @@
--- LeetCode 177: Combine Two Tables
--- https://leetcode.com/problems/combine-two-tables/description/?source=submission-ac
+# LeetCode SQL Solutions
 
-SELECT
-    firstName,
-    lastName,
-    city,
-    state
-FROM
-    Person
-LEFT JOIN Address
-    ON Person.personId = Address.personId;
+This repository contains my solutions for SQL problems from LeetCode.
+
+I use this repo to keep track of the questions I have solved and to improve my SQL skills over time.
+
+Each file is named according to the LeetCode problem number and title.

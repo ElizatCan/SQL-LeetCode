@@ -1,0 +1,8 @@
+-- 183. Customers Who Never Order
+-- https://leetcode.com/problems/employees-earning-more-than-their-managers/description/?envType=problem-list-v2&envId=nu7r1cbt
+
+
+SELECT name as Customers FROM customers
+LEFT JOIN orders 
+ON customers.id = orders.customerid
+WHERE orders.customerid  is NULL
